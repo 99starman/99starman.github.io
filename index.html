@@ -5,7 +5,9 @@
   
   <meta name="author" content="Ray Yang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
@@ -30,19 +32,19 @@
                 &nbsp &nbsp
                 <chinese>杨瑞欣</chinese>
               </p>
-              <p>I am a MSCS student at <a href="https://www.cc.gatech.edu/">Georgia Tech</a>. I received my BSc degree in Computer Science and Statistics from <a href="https://www.cs.ubc.ca/">University of British Columbia</a> in the <a href="images/vancouver.jpg">beautiful Vancouver</a>, Canada.
+              <p>I am a MSCS student at <a href="https://www.cc.gatech.edu/">Georgia Tech</a>, working with <a href="http://aritter.github.io/">Prof. Alan Ritter</a>. I received my BSc degree in Computer Science and Statistics from <a href="https://www.cs.ubc.ca/">University of British Columbia</a> in the <a href="images/vancouver.jpg">beautiful Vancouver</a>, Canada.
               </p>
               <p>
                 My research interests are <strong>Trustworthy</strong> and <strong>Data-Centric ML</strong>, focusing on building <strong>safe</strong>, <strong>socially-aware</strong>, and <strong>data-efficient</strong> <strong>Foundation Models</strong> and their applications. Specifically, I am interested in:
 
                 <p> (1) <strong>Safety and Value Alignment</strong> for Foundation Models.</p>
                 
-                <p> (2) <strong>Benchmarking and mitigating model reliability issues</strong>, including faithfulness/fidelity, privacy/memorization and truthfulness/calibration.</p>
+                <p> (2) <strong>Benchmarking and mitigating model reliability issues</strong>, including faithfulness/honesty, privacy/memorization, and confidence calibration.</p>
                  
-                <p> (3) <strong>Data synthesis</strong> for model post-training.</p>
+                <p> (3) <strong>Synthetic Data Generation</strong> for post-training.</p>
               </p>
               <p>
-                As of Summer 2025, I am a Research Engineer Intern at the <a href="https://safe.ai/">Center for AI Safety</a>. Previously, I was a research assistant at Dartmouth College where I had the chance to work with <a href="https://ruibo-liu.com/">Dr. Ruibo Liu</a> and <a href="https://www.cs.dartmouth.edu/~soroush/">Prof. Soroush Vosoughi</a> on <strong>Tool-augmented Language Models</strong> and <strong>Value Alignment for LLMs</strong>.
+                As of Summer 2025, I am a Research Engineer Intern at the <a href="https://safe.ai/">Center for AI Safety</a>, based in San Francisco. Previously, I was a research assistant at Dartmouth College where I had the chance to work with <a href="https://ruibo-liu.com/">Dr. Ruibo Liu</a> and <a href="https://www.cs.dartmouth.edu/~soroush/">Prof. Soroush Vosoughi</a> on <strong>Tool-augmented Language Models</strong> and <strong>Value Alignment for LLMs</strong>.
               </p>
               <p>
                 
@@ -55,8 +57,8 @@
                 <a href="https://twitter.com/RuixinYang6">Twitter</a>               
               </p>
             </td>
-            <td style="padding:2.5%;width:90%;max-width:90%">
-              <a href="#"><img style="width:80%;pointer-events:none;" alt="profile photo" src="images/pic.jpg"></a>
+            <td style="padding:0.5%;width:120%;max-width:120%">
+              <a href="#"><img style="width:100%;pointer-events:none;" alt="profile photo" src="images/pic.jpg"></a>
             </td>
           </tr>
         </tbody></table>
@@ -69,6 +71,43 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 				
+
+          <tr onmouseout="vis_stop()" onmouseover="vis_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='vis_image'>
+                  <a href="images/geo.jpg"><img src='images/geo.jpg' width="180"></a></div>
+                <img src='images/geo.jpg' width="180">
+              </div>
+              <script type="text/javascript">
+                function vis_start() {
+                  document.getElementById('vis_image').style.opacity = "1";
+                }
+
+                function vis_stop() {
+                  document.getElementById('vis_image').style.opacity = "0";
+                }
+                vis_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://yifanjiang19.github.io/alignerf"> -->
+                <papertitle>Evaluating Vision-Language Models on Latent Geolocation Leakage in Shared Online Images
+      </papertitle>
+              <!-- </a> -->
+              <br>
+              <strong>Ruixin Yang</strong>,
+              <a href="https://ethanm88.github.io/">Ethan Mendes</a>,
+              <a href="https://openreview.net/profile?id=~Arthur_Wang3">Arthur Wang</a>,
+              <a href="http://aritter.github.io/">Alan Ritter</a>
+              <br>
+              <p>In submission</p>
+              <p></p>
+              <p>
+                A benchmark for evaluating VLMs' contextual privacy judgment in geolocation tasks.
+              </p>
+            </td>
+          </tr>
 
 
           <tr onmouseout="alignerf_stop()" onmouseover="alignerf_start()">
